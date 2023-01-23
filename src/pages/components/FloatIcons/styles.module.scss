@@ -1,0 +1,48 @@
+.containerIcons{
+    display: none;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+    align-items: center;
+    right: -120px;
+    background-color: var(--brown-100);
+    padding: .5rem;
+    gap: 1rem;
+    border: none;
+    transition: right 0.3s;
+
+
+    @media (min-width: 769px) {
+      display: flex;
+    }
+}
+
+@for $i from 1 through 3 {
+  .containerIcons:nth-child(#{$i}) {
+    top: calc(50% + #{($i - 1) * 5 * 2}rem);
+    transform: translateY(calc(-50% - #{($i - 1) * 5}rem)) ;
+  }
+}
+.containerIconsActive{
+  display: none;
+  position: fixed;
+  right: 0;
+  z-index: 999;
+  align-items: center;
+  right: 0;
+  background-color: var(--brown-100);
+  padding: .5rem;
+  gap: 1rem;
+  border: none;
+  transition: right 0.3s;
+
+  @media (min-width: 769px) {
+    display: flex;
+  }
+}
+@for $i from 1 through 3 {
+  .containerIconsActive:nth-child(#{$i}) {
+    top: calc(50% + #{($i - 1) * 5 * 2}rem);
+    transform: translateY(calc(-50% - #{($i - 1) * 5}rem)) ;
+  }
+}

@@ -1,0 +1,139 @@
+.container {
+  background-image: url('/fundo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .containerDiferenciais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1.3rem;
+
+    @media (min-width: 769px){
+      flex-direction: row;
+      width: 100%;
+      gap: 2rem;
+      justify-content: space-around;
+    }
+
+
+    .diferencias{
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--brown-100);
+      padding: .3rem;
+      width: 90%;
+
+      @media (min-width:425px){
+        max-width: 340px;
+      }
+
+      @media (min-width: 769px){
+        margin-top: -1rem;
+        padding: .5rem;
+
+      }
+
+      .text{
+        text-transform: uppercase;
+        p{
+          font-size: 1.2rem;
+          strong{
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+    .diferencias + .diferencias{
+      margin-top: 1rem;
+
+      @media (min-width: 769px){
+        margin-top: -1rem;
+        padding: .5rem;
+      }
+    }
+  }
+
+  .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    img{
+      width: 90%;
+      object-fit: contain;
+      height: auto;
+    }
+
+  }
+
+  .content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   
+
+    .background{
+      background-color: var(--black);
+      width: 85%;
+      padding: 1rem;
+      margin-top: -1rem;
+      border-radius: 10px;
+
+
+      .text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: var(--white);
+        gap: .5rem;
+        text-align: center;
+
+
+        
+        
+        h1{
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+  }
+
+  .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+    button{
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      border: none;
+      
+      color: var(--black);
+      background-color: var(--white);
+      padding: .5rem;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      align-items: center;
+      gap: 1rem;
+
+      span{
+        font-weight: 700;
+
+      }
+
+    }
+
+  }
+}

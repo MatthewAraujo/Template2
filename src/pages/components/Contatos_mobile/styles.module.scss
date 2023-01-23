@@ -1,0 +1,51 @@
+.containerContact{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  background-color: var(--brown-100);
+
+  @media (min-width: 425px) {
+    max-width: 340px;
+    margin-inline: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px 10px 0 0;
+    justify-content: space-around;
+  }
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+
+  .containerContent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+
+   
+      
+    }
+
+    .object{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+    }
+
+    span{
+      display: block;
+      height: 30px;
+      width: 2px;
+      border-radius: 1px;
+      background-color: var(--black);
+    }
+
+}
