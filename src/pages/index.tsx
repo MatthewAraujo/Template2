@@ -4,16 +4,18 @@ import Cookies from './components/Cookies'
 import Faixada from './components/Faixada'
 import Header from './components/Header'
 import HoverIcons from './components/HoverIcons'
+import Video from './components/video'
 
 export default function Home() {
   return (
     <div>
       <Header />
       <Cookies />
-      <Contact />
+      {/* <Contact /> */}
       <HoverIcons />
       <Banner />
       <Faixada />
+      <Video />
     </div>
   )
 }

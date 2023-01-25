@@ -59,14 +59,14 @@ export default function Faixada() {
               </p>
             </div>
           </div>
-        </div>
-        <div className={styles.button}>
-          <button>
-            <div className={styles.chatImage}>
-              <ChatCircleText size={35} />
-            </div>
-            <span>marque uma visita</span>
-          </button>
+          <div className={styles.button}>
+            <button>
+              <div className={styles.chatImage}>
+                <ChatCircleText size={35} />
+              </div>
+              <strong>marque uma visita</strong>
+            </button>
+          </div>
         </div>
       </div>
     </div>

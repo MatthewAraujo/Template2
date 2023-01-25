@@ -56,11 +56,24 @@
     }
   }
 
-  .image{
+  .faixada{
+
+    @media(min-width: 769px){
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+
+    }
+
+    .image{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
+
+    @media (min-width: 769px){
+      justify-content: flex-end;
+      margin-top: 3rem;
+    }
     img{
       width: 90%;
       object-fit: contain;
@@ -74,6 +87,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media(min-width: 769px){
+      align-items: normal;
+      margin-left: -15%;
+    }
     
    
 
@@ -84,6 +102,10 @@
       margin-top: -1rem;
       border-radius: 10px;
 
+      @media (min-width: 769px){
+        height: 90%;
+        margin-top: 1rem;
+      }
 
       .text{
         display: flex;
@@ -102,38 +124,49 @@
         }
       }
     }
-
-  }
-
-  .button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    
-    button{
-      width: 80%;
+    .button{
       display: flex;
       justify-content: center;
-      border: none;
-      
-      color: var(--black);
-      background-color: var(--white);
-      padding: .5rem;
-      border-radius: 10px;
-      font-size: 1.2rem;
-      text-transform: uppercase;
       align-items: center;
-      gap: 1rem;
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
 
-      span{
-        font-weight: 700;
+      @media(min-width: 769px){
+        margin-top: -1rem;
+        margin-bottom: 0;
 
       }
+      
+      button{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        border: none;
+        
+        color: var(--black);
+        background-color: var(--white);
+        padding: .5rem;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        align-items: center;
+        gap: 1rem;
 
+        @media(min-width: 769px){
+          color: var(--brown-100);
+        }
+  
+        strong{
+          font-weight: 700;
+  
+        }
+  
+      }
     }
+  }
 
   }
+
+  
 }
