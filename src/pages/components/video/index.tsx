@@ -12,13 +12,15 @@ export default function Video() {
         strong="coração"
         pfist="no"
       />
-      <Image
-        src="/faixada.png"
-        alt="faixada do predio"
-        width={1082}
-        height={581}
-        loading="lazy"
-      />
+      <div className={styles.videoPlayer}>
+        <Image
+          src="/faixada.png"
+          alt="faixada do predio"
+          width={1082}
+          height={581}
+          loading="lazy"
+        />
+      </div>
     </div>
   )
 }
