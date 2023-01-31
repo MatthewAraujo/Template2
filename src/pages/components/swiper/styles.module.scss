@@ -1,6 +1,37 @@
-.ThumbsText{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+.containerSwiper{
+  margin-top: 2rem;
+  
+
+  
+  
+
+  
+  .swiperSlide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contentThumbs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+
+    .ThumbsText{
+      width: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 31px;
+      background-color:#E8E8E8;
+      padding: .5rem;
+      h1{
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+    }
+  }
+  
 }
