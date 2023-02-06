@@ -69,6 +69,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
+    margin-bottom: 2rem;
 
     @media (min-width: 769px){
       justify-content: flex-end;
@@ -130,11 +131,10 @@
       align-items: center;
       width: 100%;
       margin-top: 1rem;
-      margin-bottom: 1rem;
 
       @media(min-width: 769px){
         margin-top: -1rem;
-        margin-bottom: 0;
+        margin-bottom: 1rem;
 
       }
       

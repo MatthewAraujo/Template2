@@ -5,6 +5,7 @@
   width: 100%;
   margin-top: 1rem;
   position: absolute;
+  z-index: 99;
   
   @media(min-width: 769px){
     all: unset;

@@ -60,13 +60,13 @@
         background-color: var(--brown-100);
         gap: 20px;
         transition: right .3s;
+        z-index: 999;
 
         .containerA{
             display: flex;
             flex-direction: column;
             width: 100%;
             gap: 2.5rem;
-            background-color: var(--brown-200);
             width: fit-content;
             a:last-child{
                 font-size: 1rem;

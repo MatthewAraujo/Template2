@@ -1,37 +1,49 @@
 .containerSwiper{
+  width: 100%;
   margin-top: 2rem;
-  
+  position: relative;
 
-  
-  
+  .containerArrow{
+    position: absolute;
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0;
+    color: var(--brown-100);
+    z-index: 999;
 
+    @media(min-width: 769px){
+      width: 458px;
+    }
+  }
   
   .swiperSlide{
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+    margin-top: 7rem;
+    
 
-  .contentThumbs{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 2rem;
-
-    .ThumbsText{
-      width: 320px;
+    .content{
+      width: 350px;
+      margin: 0 auto;
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: center;
       border-radius: 31px;
       background-color:#E8E8E8;
       padding: .5rem;
+      gap: 2rem;
+      margin-top: 1rem;
       h1{
         font-size: 1.5rem;
         font-weight: 700;
       }
     }
-  }
-  
+  } 
+
 }

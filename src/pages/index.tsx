@@ -5,6 +5,7 @@ import Faixada from './components/Faixada'
 import Header from './components/Header'
 import HoverIcons from './components/HoverIcons'
 import Lazer from './components/Lazer'
+import Plantas from './components/plantas'
 import Video from './components/video'
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Faixada />
       <Video />
       <Lazer />
+      <Plantas />
     </div>
   )
 }
