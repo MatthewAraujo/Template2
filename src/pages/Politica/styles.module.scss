@@ -1,0 +1,21 @@
+.container{
+  width: 100%;
+  padding: 1rem;
+
+  .title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1{
+      font-size: 2rem;
+    }
+  }
+  .content{
+    width: 100%;
+    padding: 1rem;
+
+  }
+
+}

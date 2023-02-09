@@ -1,38 +1,39 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { X } from 'phosphor-react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Menu from './menu'
 import styles from './styles.module.scss'
 
 const links = [
   {
     id: 0,
-    href: '/#home',
+    href: '#home',
     text: 'Home',
   },
   {
     id: 1,
-    href: '/#empreendimento',
+    href: '#empreendimento',
     text: 'Empreendimento',
   },
   {
     id: 2,
-    href: '/#lazer',
+    href: '#lazer',
     text: 'Lazer',
   },
   {
     id: 3,
-    href: '/#localizacao',
+    href: '#localizacao',
     text: 'Localização',
   },
   {
     id: 4,
-    href: '/#plantas',
+    href: '#plantas',
     text: 'Plantas',
   },
   {
     id: 5,
-    href: '/#contato',
+    href: '#contato',
     text: 'Contato',
   },
 ]
@@ -40,13 +41,22 @@ const links = [
 export default function Header() {
   const [modal, setModal] = useState(false)
   const [isActve, setIsActve] = useState(0)
+  const [header, setHeader] = useState(false)
   function handleModal() {
     setModal(!modal)
   }
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setHeader(window.scrollY >= 80)
+    })
+  })
+
   return (
     <header>
-      <div className={styles.container}>
+      <div
+        className={!header ? styles.containerNone : styles.container}
+      >
         <div>
           <Image
             className={styles.logo}
@@ -79,7 +89,7 @@ export default function Header() {
                 {link.text}
               </Menu>
             ))}
-            <a href="politica"> Política de Privacidade</a>
+            <Link href="/Politica">Política de Privacidade</Link>
           </div>
         </nav>
         <div className={styles.modal}>

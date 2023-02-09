@@ -19,7 +19,7 @@ export default function Menu({
 }: MenuProps) {
   return (
     <a
-      className={styles.a}
+      className={isActive ? styles.aActive : ''}
       onClick={() => {
         setIsActve(id)
         setModal(false)

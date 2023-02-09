@@ -1,0 +1,33 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 1rem;
+  width: 100%;
+  gap: 1rem;
+
+  @media (min-width: 769px) {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .conteudo{
+    text-align: center;
+
+    @media (min-width: 769px) {
+      display: flex;
+      gap: .5rem;
+    }
+
+    p{
+      strong{
+        color: var(--brown-100);
+      }
+    }
+
+  
+  }
+}

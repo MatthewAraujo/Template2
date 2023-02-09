@@ -4,7 +4,7 @@ import Tag from '../Tags'
 import styles from './styles.module.scss'
 export default function Lazer() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="localizacao">
       <Tag
         strong="lazer"
         pfist=""

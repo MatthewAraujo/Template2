@@ -2,6 +2,7 @@ import Banner from './components/Banner'
 import Contact from './components/Contatos_mobile'
 import Cookies from './components/Cookies'
 import Faixada from './components/Faixada'
+import Footer from './components/Footer'
 import Form from './components/Form'
 import Header from './components/Header'
 import HoverIcons from './components/HoverIcons'
@@ -14,7 +15,7 @@ export default function Home() {
     <div>
       <Header />
       <Cookies />
-      {/* <Contact /> */}
+      <Contact />
       <HoverIcons />
       <Banner />
       <Faixada />
@@ -22,6 +23,7 @@ export default function Home() {
       <Lazer />
       <Plantas />
       <Form />
+      <Footer />
     </div>
   )
 }

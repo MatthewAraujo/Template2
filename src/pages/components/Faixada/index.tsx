@@ -4,7 +4,7 @@ import { ChatCircleText, MapPinLine, Mountains, WifiHigh } from 'phosphor-react'
 import styles from './styles.module.scss'
 export default function Faixada() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="empreendimento">
       <div className={styles.containerDiferenciais}>
         <div className={styles.diferencias}>
           <div className={styles.image}>

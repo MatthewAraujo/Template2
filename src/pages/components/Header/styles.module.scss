@@ -5,7 +5,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 9999999;
+    opacity: 1;
+    transition: all .6s;
+
 
     .logo{
         width: 200px;
@@ -34,8 +39,12 @@
 
         a{
             font-size: 1.3rem;
+
         }
-        
+        a.Active{
+            border-top: 1px solid var(--brown-100);
+            border-bottom: 1px solid var(--brown-100);
+        }
         a:last-child{
             display: none;
         }
@@ -102,4 +111,8 @@
             display: none;
         }            
     }
+}
+.containerNone{
+    display: none;
+    opacity: 0;
 }

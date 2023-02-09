@@ -17,7 +17,7 @@ export default function Cookies() {
           entre outras tecnologias. De acordo com a nossa Política de
           Privacidade, ao continuar navegando, você aceita estas condições.
           Acesse nossa{' '}
-          <Link className={styles.link} href="/politica">
+          <Link className={styles.link} href="/Politica">
             Política de Privacidade
           </Link>
           .
