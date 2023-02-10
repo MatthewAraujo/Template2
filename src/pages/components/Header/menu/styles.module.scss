@@ -1,6 +1,36 @@
+.link {
+    font-size: 1.3rem;
+    position: relative;
+    padding-right: 1rem;
+
+    &::before{
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: var(--brown-100);
+        transition: width .6s;
+        position:absolute;
+        top: -2px;
+        left: 0;
+    }
+
+    &::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: var(--brown-100);
+        transition: width .6s .2s;
+        position:absolute;
+        bottom: -2px;
+        left: 0;
+    }
 
 
-.aActive{
-    border-top: 1px solid var(--brown-100);
-    border-bottom: 1px solid var(--brown-100);
+    &.active {
+        &::after, &::before {
+            width: 100%;
+        }    
+    }
 }

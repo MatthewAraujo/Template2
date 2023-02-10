@@ -13,6 +13,9 @@ import Video from './components/video'
 export default function Home() {
   return (
     <div>
+      <header>
+        <title>Company</title>
+      </header>
       <Header />
       <Cookies />
       <Contact />

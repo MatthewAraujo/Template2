@@ -5,7 +5,7 @@ import styles from './styles.module.scss'
 
 export default function Plantas() {
   return (
-    <div className={styles.container} id="plantas">
+    <section className={styles.container} id="plantas">
       <Tag
         icon={<Buildings size={32} />}
         psecond="quartos"
@@ -15,6 +15,6 @@ export default function Plantas() {
       <div className={styles.containerPlantas}>
         <SwiperPlantas />
       </div>
-    </div>
+    </section>
   )
 }

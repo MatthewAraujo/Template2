@@ -45,18 +45,43 @@ export default function Header() {
   function handleModal() {
     setModal(!modal)
   }
+  useEffect(() => {
+    const map = {
+      home: 0,
+      empreendimento: 1,
+      lazer: 2,
+      localizacao: 3,
+      plantas: 4,
+      contato: 5,
+    }
+
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsActve(map[entry.target.id])
+          }
+        })
+      },
+      {
+        rootMargin: '0px 0px -780px 0px',
+      },
+    )
+
+    document.querySelectorAll('section').forEach((section) => {
+      observer.observe(section)
+    })
+  })
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    window.addEventListener('scroll', () => {
       setHeader(window.scrollY >= 80)
     })
   })
 
   return (
     <header>
-      <div
-        className={!header ? styles.containerNone : styles.container}
-      >
+      <div className={`${styles.container} ${header ? styles.scrolled : ''}`}>
         <div>
           <Image
             className={styles.logo}

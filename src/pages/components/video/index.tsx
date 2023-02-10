@@ -13,7 +13,7 @@ export default function Video() {
     }
   }, [])
   return (
-    <div className={styles.video} id="lazer">
+    <section className={styles.video} id="lazer">
       <Tag
         icon={<MapPin size={32} />}
         psecond="da cidade"
@@ -29,6 +29,6 @@ export default function Video() {
           />
         )}
       </div>
-    </div>
+    </section>
   )
 }

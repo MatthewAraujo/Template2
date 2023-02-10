@@ -12,13 +12,9 @@
     margin: 0 auto;
     left: 50%;
     transform: translate(-50%, 0);
-    bottom: 0;
+    bottom: 5px;
     color: var(--brown-100);
     z-index: 999;
-
-    @media(min-width: 769px){
-      width: 458px;
-    }
   }
   
   .swiperSlide{

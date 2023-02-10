@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from './styles.module.scss'
 export default function Banner() {
   return (
-    <div className={styles.banner} id="home">
+    <section className={styles.banner} id="home">
       <Image
         src="/banner.png"
         alt="sala"
@@ -19,6 +19,6 @@ export default function Banner() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
